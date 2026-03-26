@@ -576,4 +576,3 @@ Found a new attack vector not in the 20 tasks? Open an issue — we will add it.
 
 ---
 
-*Built for the Meta PyTorch OpenEnv Hackathon 2026 × Scaler School of Technology, Bangalore*
