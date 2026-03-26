@@ -559,7 +559,7 @@ pip install jailbreak-arena[all]        # everything
 **Mithilesh Kumar Lala**
 GitHub: [@Mithilesh-Lala](https://github.com/Mithilesh-Lala) &nbsp;|&nbsp;
 HuggingFace: [mkl-01](https://huggingface.co/mkl-01) &nbsp;|&nbsp;
-Docker: [mithilesh-lala](https://hub.docker.com/r/mithilesh-lala/jailbreak-arena)
+Docker: [mithilesh-lala](https://hub.docker.com/r/mithileshkumarlala/jailbreak-arena)
 
 ---
 
