@@ -104,10 +104,18 @@ class HTTPAdapter(BaseAdapter):
             return response.text
 
     def _build_payload(self, user_message: str) -> dict:
-        """Replace {input} placeholder in payload template."""
-        payload_str = json.dumps(self.payload_template)
-        payload_str = payload_str.replace("{input}", user_message)
-        return json.loads(payload_str)
+        
+    #Replace {input} placeholder in payload template.
+    # Build payload directly — avoids JSON serialization issues
+    # with special characters in attack prompts
+        payload = {}
+        for key, value in self.payload_template.items():
+            if isinstance(value, str) and "{input}" in value:
+                payload[key] = value.replace("{input}", user_message)
+        else:
+            payload[key] = value
+        return payload
+    
 
     def _extract_response(self, data: dict) -> str:
         """
